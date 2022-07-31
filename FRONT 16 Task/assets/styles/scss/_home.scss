@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar 
+{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    height: 80px;
+    background-color: rgb(230, 227, 227);
+    .container 
+    {
+        height: 100%;
+        background-color: rgb(230, 227, 227);
+        &__logo 
+        {
+            display: flex;
+            align-items: center;
+            img 
+            {
+                width: 100%;
+                padding-bottom: 7%;
+            }
+        }
+
+        &__links 
+        {
+            ul 
+            {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                width: 80%;
+                li 
+                {
+                    a 
+                    {
+                        text-decoration: none;
+                        color: rgb(95, 37, 1);
+                    }
+                }
+            }
+        }
+
+        &__contact
+        {
+            padding: 0 10px;
+            background-color: brown;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            &__phone-div
+            {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i 
+                {
+                    font-size: 20px;
+                }
+            }
+
+            &__order-div
+            {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+        }
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .container 
+    {
+        &__links 
+        {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:540px){
+    
+    .info 
+    {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+    }
+    .info__background-image 
+    {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        width: 100%;
+        height: 30vh;
+    }
+}
+.info 
+{
+    position: relative;
+    top: 80px;
+    &__background-image 
+    {
+        height: 60vh;
+        
+        background-image: url("https://newkit.moxcreative.com/breadmeal/wp-content/uploads/sites/6/2022/07/different-types-of-bread-with-spikelets-.jpg");
+        background-size: cover;
+        &__titles
+        {
+            height: 100%;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+                align-items: center;
+            .texts
+            {
+                width: 70%;
+                h4 
+                {
+                    font-size: 40px;
+                    color: white;
+                }
+                span 
+                {
+                    font-size: 18px;
+                    color: white;
+                    display: inline-block;
+                    position: relative;
+                }
+                span.before 
+                {
+                    margin-left: 6%;
+                }
+                span.before::before
+                {
+                    
+                    content: "";
+                    height: 2px;
+                    width: 20%;
+                    background-color: orange;
+                    position: absolute;
+                    left: 0px;
+                    left: -11px;
+                   // margin-right: 5px;
+                    top: 14px;
+                }
+
+                
+            }
+        }
+        
+    }
+}
+.products
+{
+    background-image: url("https://newkit.moxcreative.com/breadmeal/wp-content/uploads/sites/6/2022/07/43.jpg");
+    background-size: cover;
+    position: relative;
+    top: 80px;
+    .row 
+    {
+        & > div 
+        {
+            
+            padding: 10px 40px;
+            & > div
+            {
+                height: 100%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                .image-div
+                {
+                    width: 100%;
+                    img 
+                    {
+                        width: 100%;
+                    }
+                    
+                }
+                .info-div 
+                {
+                    background-color: white;
+                    padding: 10px;
+                }
+                .time-div 
+                {
+                    background-color: white;
+                    border-top: whitesmoke solid 1px;
+                    padding: 10px;
+                    span 
+                    {
+                        font-size: 12px;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-site
+{
+    background-image: url("https://newkit.moxcreative.com/breadmeal/wp-content/uploads/sites/6/2022/07/different-types-of-bread-with-spikelets-.jpg");
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+    top: 80px;
+    .row 
+    {
+        .col
+        {
+            padding: 10px 20px;
+                .image-div-footer
+            {
+                width: 30%;
+                padding-bottom: 20px;
+                img 
+                {
+                    width: 100%;
+                }
+                p 
+                {
+                    
+                    width: 90%;
+                }
+            }
+            .info-footer 
+            {
+                p 
+                {
+                    color: white !important;
+                }
+            }
+            .social-ul 
+            {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                width: 20%;
+                li 
+                {
+                    a 
+                    {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .company-col 
+        {
+            .company-title
+            {
+                color: white;
+            }
+            .company-list 
+            {
+                color: white;
+                list-style-type: none;
+                li 
+                {
+
+                }
+                a 
+                {
+                    text-decoration: none;
+                    color: white;
+                    i 
+                    {
+                        color: orange;
+                    }
+                }
+               
+            }
+        }
+        .hours-col
+        {
+            h4 
+            {
+                color: white;
+            }
+            span 
+            {
+                color: white;
+            }
+        }
+        
+    }
+}
+// .footer-site::before 
+// {
+//     content: "";
+//     background-color: rgba(92, 91, 91, 0.4);
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+// }
